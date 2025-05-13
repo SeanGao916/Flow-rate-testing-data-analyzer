@@ -19,7 +19,7 @@ with col1:
     st.header("📁 Pressure Data Analyzer")
     st.markdown("**Read from row 12 onward | Columns: Pressure1 (col 2) & Pressure2 (col 4)**")
 
-    csv_file = st.file_uploader("📂 Upload CSV file", type=["csv"], key="csv")
+    csv_file = st.file_uploader("📂 Upload **Pressure Sensor** CSV file", type=["csv"], key="csv")
 
     if csv_file is not None:
         try:
@@ -42,7 +42,7 @@ with col2:
     st.header("📁 DAQ Data Analyzer")
     st.markdown("**Read from row 56 onward | T_inlet (°C), Side P_1 (PSI), Side P_2 (PSI), & Main_dowmstream Flow rate (LPM)**")
 
-    uploaded_file = st.file_uploader("📂 Upload your Excel or CSV file", type=["xlsx", "xls", "csv"])
+    uploaded_file = st.file_uploader("📂 Upload **DAQ** CSV file", type=["xlsx", "xls", "csv"])
 
     if uploaded_file:
         try:
