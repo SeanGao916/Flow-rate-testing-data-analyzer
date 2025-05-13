@@ -28,8 +28,8 @@ with col1:
             value2 = pd.to_numeric(df_csv[3], errors='coerce').head(3000)
 
             st.subheader("✅ Average of 5 minutes Data Points (3000 data)")
-            st.write(f" **Pressure 1 (col 2):** `{value1.mean():.6f}`")
-            st.write(f" **Pressure 2 (col 4):** `{value2.mean():.6f}`")
+            st.write(f" **Pressure 1 (col 2):** {value1.mean():.6f}")
+            st.write(f" **Pressure 2 (col 4):** {value2.mean():.6f}")
 
             with st.expander("🔍 Preview CSV Data (first 5 rows)"):
                 st.dataframe(df_csv.head())
